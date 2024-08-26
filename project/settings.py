@@ -141,5 +141,5 @@ CORS_ALLOWED_ORIGINS = [
 STATIC_URL = '/static/'
 
 # Directorio donde se recopilarán todos los archivos estáticos
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR/"assets"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
