@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-qx#grl&1#=2%v#lp@al$vq9ot%-4zn^9m2q194afr@wm!8x#yf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '.vercel.app'
+]
 
 
 # Application definition
@@ -132,7 +134,3 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://frontend-generadores.vercel.app/"
 ]
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-STATIC_URL = "static/"
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
